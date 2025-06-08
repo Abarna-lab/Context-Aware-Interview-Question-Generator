@@ -1,0 +1,5 @@
+streamlit
+pymupdf  # For PDF text extraction
+python-docx  # For DOCX text extraction
+google-generativeai  # Gemini AI integration
+python-dotenv  # Environment variable management
