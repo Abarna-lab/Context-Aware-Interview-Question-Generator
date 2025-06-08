@@ -1,0 +1,185 @@
+SAP ERP (System Application Programming) is an enterprise software to manage business 
+operations and customer relations. It is designed to manage and integrate core business 
+processes across various department within an organisation. SAP ERP has ability to 
+provide real-time information which facilitates quick decision-making. 
+The major types are Technical and functional modules. 
+Technical Modules: 
+➢ SAP ABAP -Advanced Business Application Programming 
+➢ SAP Basis 
+Functional Modules: 
+➢ GRC-Governance, Risk and Compliance 
+➢ FI - Financial Accounting 
+➢ CO - Controlling 
+➢ MM - Materials Management 
+➢ SD - Sales and Distribution 
+➢ PP - Production Planning 
+➢ QM - Quality Management 
+➢ PM - Plant Maintenance 
+➢ HCM (or HR) - Human Capital Management 
+➢ PS - Project System 
+➢ WM - Warehouse Management 
+➢ CS - Customer Service 
+➢ EHS - Environment, Health & Safety 
+Clients In SAP: 
+Client is a Customer in SAP. We can say that each customer maps to one client. Within one 
+SAP instance, a number of Clients can be created. No need to install separate software’s for 
+each and every customer. It provides isolation, one client cannot see the data of another 
+client.We can create up to 1000 clients ranging from 000 to 999. 
+A client is a separate entity within an SAP system that contains its own master data, 
+transactional data and user profiles. 
+Master data or business data: Data that is required by the business to perform business 
+operations. E.g. Information about customers, employees, products, etc. 
+Transactional data: Data that is created and changed on a day-to-day basis due to business 
+operations is known as transactional data. E.g. purchase orders, sales orders, service requests, 
+etc. 
+User master data: User data of a particular user in an SAP system. E.g. Name, E-mail, 
+Language as well as parameters, authorisation and user groups 
+There are default clients in SAP 
+They are 
+• Client 000 − SAP main admin client 
+• Client 001 − Copy of Client 000 which is created during the installation of the 
+system. 
+• Client 066 is used by EWA (Early Watch Alerts), for system monitoring and 
+performance analysis. 
+Why are they used? 
+➢ Default clients exist in SAP systems to provide a foundation for system setup, 
+configuration, and maintenance. 
+➢ Provide environments that can be copied or customized based on organizational 
+needs 
+➢ Performs system health checks. 
+T codes in SAP: 
+• SAP Transaction Codes (T-Codes) are shortcuts that allow users to access specific 
+functions in the SAP GUI ) without navigating through multiple menus. Each 
+transaction code corresponds to a predefined program or function, making navigation 
+within SAP faster and more efficient. 
+• It is usually a 4- to 20-character alphanumeric shortcut. 
+Users: 
+USERS  
+USE 
+Dialog User 
+Used for day-to-day users to 
+perform business 
+transactions 
+DIFFERENCE 
+Authentication needed, 
+interactive logon, 
+checks password expiration 
+and multiple logins. 
+System User 
+Used for System-to-System 
+Communication 
+No human interaction. 
+used for background 
+processing, 
+cannot log in via SAP GUI. 
+Communication User 
+Used for Communication 
+between Different Systems 
+No interactive logon, used 
+for external RFC calls and 
+system communication. 
+Service User 
+Used for guest/Anonymous  
+Authentication needed, 
+Limited authorisations, 
+allows multiple logins, 
+password changes by admin 
+only. 
+Reference User 
+used for authorization of 
+administration. 
+No direct logon, 
+used to assign additional 
+authorizations to other users. 
+Default users in SAP: 
+➢ SAP* 
+➢ DDIC  
+➢ EARLYWATCH  
+➢ TMSADM  
+➢ SAPCPIC   
+Purposes: 
+SAP*: 
+▪ After installation, SAP needs a way to log in before custom users/roles are created 
+that allows initial access to configure the system. 
+▪ If admin accounts are locked or passwords lost, default users (like SAP*) can serve as 
+a fallback. 
+▪ 000/001 Client Created during installation with master password. 
+DDIC (Data Dictionary): 
+▪ Technical user uses for system upgrades, support packs, ABAP Dictionary 
+maintenance, and TMS configuration required for SAP updates. 
+EARLYWATCH: 
+▪ Used by SAP’s EarlyWatch service for system monitoring and performance analysis. 
+▪ Client 066 is reserved for early watch. 
+TMS-ADM: 
+▪ Transport Management System is SAP's framework for managing 
+development/transport requests across systems. 
+▪ Used for automated RFC communications between SAP systems in a landscape. 
+▪ Required to execute imports/exports via transaction STMS (transport of changes). 
+SAPCPIC: 
+▪ SAPCPIC is a legacy technical user in SAP systems, primarily used for CPI-C 
+(Common Programming Interface for Communications) connections. 
+▪ CPI-C was an older protocol for system-to-system communication (predecessor to 
+modern RFC). 
+▪ Used for older versions and some interfaces rely on it 
+APPLICATION CHANGE MANAGEMENT: 
+An Application Change Management Process is a structured and systematic approach for 
+managing all the changes made to an application or software system throughout its lifecycle. 
+This process aims to ensure that changes are implemented in a controlled, predictable, and 
+auditable manner, minimizing risks and maximizing benefits.    
+At its core, it involves a series of defined steps and responsibilities for: 
+• Identifying the need for a change: This could arise from bug fixes, new features, 
+enhancements, security vulnerabilities, performance improvements, or business 
+requirements. 
+• Submitting a change request: A formal request outlining the proposed change, its 
+purpose, scope, and potential impact.    
+• Evaluating and assessing the change: Analyzing the technical feasibility, potential 
+risks, resource requirements, and impact on other parts of the application and related 
+systems. 
+• Planning the change: Defining the detailed steps for implementation, including 
+timelines, responsibilities, testing strategies, and rollback plans.    
+• Approving the change: Obtaining necessary authorizations from relevant 
+stakeholders (technical leads, business owners, change advisory boards). 
+• Implementing the change: Executing the planned changes in the development, 
+testing, and eventually production environments.    
+• Testing the change: Thoroughly verifying that the implemented change functions as 
+expected and hasn't introduced any new issues.    
+• Deploying the change to production: Migrating the tested changes to the live 
+environment. 
+• Monitoring and validating the change: Observing the production environment after 
+deployment to ensure stability and that the intended benefits are realized. 
+• Documenting the change: Recording all aspects of the change, including the request, 
+plan, implementation steps, test results, and deployment details.    
+• Reviewing and closing the change: Assessing the success of the change and 
+formally closing the change request.   
+• Production environments are live systems that users and the business rely on. Changes 
+made without proper planning and testing can lead to unexpected errors, system 
+failures, and prolonged downtime, causing significant business impact, financial 
+losses, and reputational damage. A change management process ensures changes are 
+thoroughly tested in non-production environments before deployment, reducing the 
+likelihood of such disruptions. 
+• The change management process involves various stakeholders, including developers, 
+testers, operations teams, and business users. A formal process ensures clear 
+communication channels, defined responsibilities, and better collaboration throughout 
+the change lifecycle. 
+3-system landscape in SAP that facilitate change management process 
+Development (DEV) System: This is where all the initial configuration, customization, and 
+development activities take place. Consultants and developers make changes to the system 
+based on business requirements. It often has multiple clients for different development and 
+testing purposes (e.g., a customizing client, a development client, a unit test client).    
+Quality Assurance (QAS) System: Once changes are developed and unit-tested in the DEV 
+system, they are transported to the QAS system. This system is a near-replica of the 
+production environment and is used for integration testing, user acceptance testing (UAT), 
+and regression testing. The goal is to identify and resolve any issues before changes are 
+moved to the live production system.  
+Production (PRD) System: This is the live, operational SAP system that end-users use to 
+conduct daily business processes. It contains the actual business data and should be a stable 
+and secure environment. Direct changes are generally prohibited in the PRD system to 
+maintain its integrity.   
+Advantages: 
+• Keeps development, testing, and live operations distinct, preventing accidental 
+production errors.  
+• Enforces a structured flow for changes (DEV - QAS - PRD).  
+• Production remains stable because changes are tested thoroughly beforehand.  
+• Dedicated testing in QAS leads to more reliable deployments.  
+• Supports teamwork between development, testing, and business teams.  
+• Provides a clear history of changes which is easy to audit. 
